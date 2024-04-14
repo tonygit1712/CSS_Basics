@@ -10,7 +10,7 @@
 	<meta http-equiv="refresh" content="300">
 
 	<link rel="stylesheet" href="Css_Basics.css">
-	<link rel="stylesheet" href="Css_Basics_Fonts.css">
+	<link rel="stylesheet" href="Css_Basics_Transition.css">
 	<link rel="stylesheet" href="Horizontal_Navbar.css">
 </head>
 <body>
@@ -35,21 +35,105 @@
 		</ul>
 	</nav>
 
-	<h1 class="minor">Web Fonts</h1>
+	<h1 class="minor">CSS Transitions</h1>
+		<h2 class="minor">Transition Properties :</h2>
+			<div class="container">
+				<div class="box one">
+					<h2>Transition Color</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;
+					</p>
+				</div>
+				<div class="box two">
+					<h2>Transition Duration</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;<br>
+						transition-duration: 1000ms;
+					</p>
+				</div>
+				<div class="box three">
+					<h2>Transition Delay</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;<br>
+						transition-duration: 1000ms;<br>
+						transition-delay: 750ms;
+					</p>
+				</div>
+				<div class="box four">
+					<h2>Transition Timing</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;<br>
+						transition-duration: 1000ms;<br>
+						transition-delay: 750ms; <br>
+						transition-timing-function: ease-in;
+					</p>
+				</div>
+				<div class="box five">
+					<h2>Transition Shorthand</h2>
+					<p>background-color: #ffff00;<br>
+						transition: background 1000ms ease-in 250ms;
+					</p>
+				</div>
+			</div>
 
-		<h2 class="minor">Font Basics</h2>
-			<div class="font" id="fontBasics1">
-				<p>#fontBasics1 {
-					font-family: "Times New Roman", Times, serif;
-				}</p>
-			</div>
-			<div class="font" id="fontBasics2">
-				<p>#fontBasics2 {
-					font-family: Arial, Helvetica, sans-serif;
-				}</p>
-			</div>
 		
-		
+		<h2 class="minor">Transform Property :</h2>
+			<div class="container">
+				<div class="box six">
+					<h2>Rotate Transform</h2>
+					<p>transform: rotate(45deg);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box seven">
+					<h2>Skew Transform</h2>
+					<p>transform: skewX(-15deg);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box eight">
+					<h2>Scale Transform</h2>
+					<p>transform: scaleY(1.1);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box nine">
+					<h2>Translate Transform</h2>
+					<p>transform: translate(10px, 0);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box ten">
+					<h2>Translate Transform</h2>
+					<p>transform: translateY(10px);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+			</div>
+
+		<h2 class="minor">Transition Timing Function :</h2>
+			<div class="container2">
+				<div class="box2 eleven">
+					<p>transition-timing-function: linear;</p>
+				</div>
+				<div class="box2 twelve">
+					<p>transition-timing-function: ease;</p>
+				</div>
+				<div class="box2 thirteen">
+					<p>transition-timing-function: ease-in;</p>
+				</div>
+				<div class="box2 fourteen">
+					<p>transition-timing-function: ease-out</p>
+				</div>
+				<div class="box2 fifteen">
+					<p>transition-timing-function: ease-in-out</p>
+				</div>
+			</div>
 
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
