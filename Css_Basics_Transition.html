@@ -10,7 +10,7 @@
 	<meta http-equiv="refresh" content="300">
 
 	<link rel="stylesheet" href="Css_Basics.css">
-	<link rel="stylesheet" href="Css_Basics_Fonts.css">
+	<link rel="stylesheet" href="Css_Basics_Transition.css">
 	<link rel="stylesheet" href="Horizontal_Navbar.css">
 </head>
 <body>
@@ -22,10 +22,10 @@
 					<a href="Css_Basics_Positioning.html">Positioning</a>
 					<a href="Css_Basics_Typo.html">Typography</a>
 					<a href="Css_Basics_Media.html">Media Screen</a>
-					<a href="Css_Basics_Fonts.html" class="active">Web Fonts</a>
+					<a href="Css_Basics_Fonts.html">Web Fonts</a>
 					<a href="Css_Basics_Background.html">Background Image</a>
 					<a href="Css_Basics_Paging.html">Paging</a>
-					<a href="Css_Basics._Transition.html">Transition</a>
+					<a href="Css_Basics_Transition.html" class="active">Transition</a>
 					<a href="Css_Basics_Animation.html">Animation</a>
 				</div>
 			</li>
@@ -35,75 +35,104 @@
 		</ul>
 	</nav>
 
-	<h1 class="minor">Web Fonts</h1>
+	<h1 class="minor">CSS Transitions</h1>
+		<h2 class="minor">Transition Properties :</h2>
+			<div class="container">
+				<div class="box one">
+					<h2>Transition Color</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;
+					</p>
+				</div>
+				<div class="box two">
+					<h2>Transition Duration</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;<br>
+						transition-duration: 1000ms;
+					</p>
+				</div>
+				<div class="box three">
+					<h2>Transition Delay</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;<br>
+						transition-duration: 1000ms;<br>
+						transition-delay: 750ms;
+					</p>
+				</div>
+				<div class="box four">
+					<h2>Transition Timing</h2>
+					<p>background-color: #ffff00;<br>
+						transition-property: background;<br>
+						transition-duration: 1000ms;<br>
+						transition-delay: 750ms; <br>
+						transition-timing-function: ease-in;
+					</p>
+				</div>
+				<div class="box five">
+					<h2>Transition Shorthand</h2>
+					<p>background-color: #ffff00;<br>
+						transition: background 1000ms ease-in 250ms;
+					</p>
+				</div>
+			</div>
 
-		<h2 class="minor">Font Basics</h2>
-			<div class="font" id="fontBasics1">
-				<p>#fontBasics1 {
-					font-family: "Times New Roman", Times, serif;
-				}</p>
-			</div>
-			<div class="font" id="fontBasics2">
-				<p>#fontBasics2 {
-					font-family: Arial, Helvetica, sans-serif;
-				}</p>
-			</div>
-
-		<h2 class="minor">Font Style</h2>
-			<div class="font" id="fontStyle1">
-				<p>#fontStyle1 {
-					font-style: italic;
-				}</p>
-			</div>
-			<div class="font" id="fontStyle2">
-				<p>#fontStyle2 {
-					font-weight: bold;
-				}</p>
-			</div>
-			<div class="font" id="fontStyle3">
-				<p>#fontStyle3 {
-					font-variant: small-caps;
-				}</p>
-			</div>
-
-		<h2 class="minor">Font Size</h2>
-		<div class="font" id="fontSize1">
-			<p>#fontSize1 {
-				font-size: 1em;
-			}</p>
-		</div>
-		<div class="font" id="fontSize2">
-			<p>#fontSize2 {
-				font-size: 16px;
-			}</p>
-		</div>
-		<div class="font" id="fontSize3">
-			<p>#fontSize3 {
-				font-size: 1vw;
-			}</p>
-		</div>
-
-		<h2 class="minor">Font from Google</h2>
-		<div class="font">
-			<p style="font-style:italic">&#60;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"&#62;</p>
-			<p>=> This link tag will import the Google Font Sofia with a specific effect and 3 other Google Fonts (Outline, Emboss and Shadow-Multiple). </p>
-		</div>
 		
-		<h2 class="minor">Font Shorthand</h2>
-			<div class="font" id="fontShort1">
-				<p>#fontShort1 {<br>
-					font-style: italic;<br>
-					font-variant: small-caps;<br>
-					font-weight: bold;<br>
-					font-size: 16px;<br>
-					line-height: 30px;<br>
-					font-family: Georgia, serif;<br>
-				}</p>
+		<h2 class="minor">Transform Property :</h2>
+			<div class="container">
+				<div class="box six">
+					<h2>Rotate Transform</h2>
+					<p>transform: rotate(45deg);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box seven">
+					<h2>Skew Transform</h2>
+					<p>transform: skewX(-15deg);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box eight">
+					<h2>Scale Transform</h2>
+					<p>transform: scaleY(1.1);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box nine">
+					<h2>Translate Transform</h2>
+					<p>transform: translate(10px, 0);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
+				<div class="box ten">
+					<h2>Translate Transform</h2>
+					<p>transform: translateY(10px);<br>
+						transition-property: transform;<br>
+						transition-duration: 1000ms;<br>
+					</p>
+				</div>
 			</div>
-			<div class="font" id="fontShort2">
-				<p>#fontShort2 {
-					font: italic small-caps bold 12px/30px Georgia, serif;
-				}</p>
+
+		<h2 class="minor">Transition Timing Function :</h2>
+			<div class="container2">
+				<div class="box2 eleven">
+					<p>transition-timing-function: linear;</p>
+				</div>
+				<div class="box2 twelve">
+					<p>transition-timing-function: ease;</p>
+				</div>
+				<div class="box2 thirteen">
+					<p>transition-timing-function: ease-in;</p>
+				</div>
+				<div class="box2 fourteen">
+					<p>transition-timing-function: ease-out</p>
+				</div>
+				<div class="box2 fifteen">
+					<p>transition-timing-function: ease-in-out</p>
+				</div>
 			</div>
 
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

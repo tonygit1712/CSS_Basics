@@ -1,55 +1,134 @@
-/* Typography divs thoughout this page*/
-div.font {
-    display: block;
-    border: 1px solid black;
-    margin: 15px 0 15px 50px;
+/* Transition Box */
+h2 {
+    text-decoration: underline black 1px;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 50px;
+    grid-row-gap: 100px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #6e6e6e;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    text-align-last: center;
+}
+
+/* Transition Properties */
+.one:hover {
+    background-color: #ffff00;
+    transition-property: background;
+}
+.two:hover {
+    background-color: #ffff00;
+    transition-property: background;
+    transition-duration: 1000ms;
+}
+.three:hover {
+    background-color: #ffff00;
+    transition-property: background;
+    transition-duration: 1000ms;
+    transition-delay: 750ms;
+}
+.four:hover {
+    background-color: #ffff00;
+    transition-property: background;
+    transition-duration: 1000ms;
+    transition-delay: 250ms;
+    transition-timing-function: ease-in;
+}
+.five:hover {
+    background-color: #ffff00;
+    transition: background 1000ms ease-in 250ms;
+}
+
+/* Transform Property */
+.six:hover {
+    transform: rotate(45deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.seven:hover {
+    transform: skewX(-15deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.eight:hover {
+    transform: scaleY(1.1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.nine:hover {
+    transform: translate(10px, 0);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.ten:hover {
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+
+/* Transition Timing Function */
+.container2 {
+    width: 88vw;
+        height: 300px;
+        margin-left: 50px;
+        padding: 0;
+}
+.box2 {
+    width: 250px;
+    height: 50px;
+    transition-duration: 2000ms;
+    transition-property: width;
+    text-align: left;
     padding: 5px;
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-p.repeat {
-    font-style: italic;
-    text-decoration: 1px line-through;
-}
-
-/* Font Basics */
-#fontBasics1 {
-    font-family: "Times New Roman", Times, serif;
-}
-#fontBasics2 {
-    font-family: Arial, Helvetica, sans-serif;
+.box2:hover {
+    width: 1350px;
 }
 
-/* Font Style */
-#fontStyle1 {
-    font-style: italic;
+.eleven:hover {
+transition-timing-function: linear;
 }
-#fontStyle2 {
-    font-weight: bold;
+.twelve:hover {
+    transition-timing-function: ease;
 }
-#fontStyle3 {
-    font-variant: small-caps;
+.thirteen:hover {
+    transition-timing-function: ease-in;
 }
-
-/* Font Size */
-#fontSize1 {
-    font-size: 1em;
+.fourteen:hover {
+    transition-timing-function: ease-out;
 }
-#fontSize2 {
-    font-size: 16px;
+.fifteen:hover {
+    transition-timing-function: ease-in-out;
 }
-#fontSize3 {
-    font-size: 1vw;
+.eleven {
+    background-color: #ffff00;
 }
-
-/* Font Shorthand */
-#fontShort1 {
-    font-style: italic;
-    font-variant: small-caps;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: Georgia, serif;
+.twelve {
+    background-color: #dddd00;
 }
-#fontShort2 {
-    font: italic small-caps bold 16px/30px Georgia, serif;
+.thirteen {
+    background-color: #bbbb00;
+}
+.fourteen {
+    background-color: #999900;
+}
+.fifteen {
+    background-color: #777700;
 }
