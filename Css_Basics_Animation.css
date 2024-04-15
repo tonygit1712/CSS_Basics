@@ -1,0 +1,54 @@
+/* Transition Box */
+h2 {
+    text-decoration: underline black 1px;
+    text-align: center;
+}
+.property {
+    text-align: center;
+    border: 1px solid black;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #333333;
+    color: white;
+}
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 210px;
+    grid-row-gap: 100px;
+    max-width: 90%;
+    padding: 0;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #6e6e6e;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+    text-align-last: center;
+}
+
+@keyframes bgChange1 {
+    from {background-color: #6e6e6e;}
+    to {background-color:#ffff00;}
+}
+
+.one {
+    animation-name: bgChange;
+    animation-duration: 3s;
+}
+.two {
+    animation-name: bgChange;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+.three {
+    animation-name: bgChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
