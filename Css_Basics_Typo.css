@@ -16,8 +16,8 @@ p.repeat {
     color: black;
 }
 #textColor2 {
-    background-color: #6e6e6e;
-    color: #ffff00;
+    background-color: var(--lightGray);
+    color: var(--yellow);
 }
 
 /* Text Alignment */
@@ -82,12 +82,12 @@ p.repeat {
 }
 #textDecoration5 {
     text-decoration-line: underline;
-    text-decoration-color: #ffff00;
+    text-decoration-color: var(--yellow);
     text-decoration-style: wavy;
     text-decoration-thickness: 2px;
 }
 #textDecoration6 {
-    text-decoration: underline #ffff00 wavy 2px; 
+    text-decoration: underline var(--yellow) wavy 2px; 
 }
 
 /* Text Transform */

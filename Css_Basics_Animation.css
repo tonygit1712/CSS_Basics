@@ -3,15 +3,6 @@ h2 {
     text-decoration: underline black 1px;
     text-align: center;
 }
-.property {
-    text-align: center;
-    border: 1px solid black;
-    width: max-content;
-    margin: 50px auto 50px auto;
-    padding: 0 10px;
-    background-color: #333333;
-    color: white;
-}
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,7 +14,7 @@ h2 {
 .box {
     width: 200px;
     height: 200px;
-    background-color: #6e6e6e;
+    background-color: var(--lightGray);
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
@@ -35,24 +26,24 @@ h2 {
 
 /* Animations */
 @keyframes anim1 {
-    from {background-color: #6e6e6e;}
-    to {background-color:#ffff00;}
+    from {background-color: var(--lightGray);}
+    to {background-color:var(--yellow);}
 }
 @keyframes anim2 {
-    0% {background-color: #6e6e6e;}
-    50% {background-color:#ffff00;}
+    0% {background-color: var(--lightGray);}
+    50% {background-color:var(--yellow);}
     100% {background-color:red;}
 }
 @keyframes anim3 {
-    from {background-color: #6e6e6e; top: 0;}
-    to {background-color:#ffff00; top: 40px;}
+    from {background-color: var(--lightGray); top: 0;}
+    to {background-color:var(--yellow); top: 40px;}
 }
 @keyframes anim4 {
-    from {background-color: #6e6e6e; width: 250px;}
-    to {background-color:#ffff00; width: 1350px;}
+    from {background-color: var(--lightGray); width: 250px;}
+    to {background-color:var(--yellow); width: 1350px;}
 }
 @keyframes anim5 {
-    from {background-color: #ffff00; top: 0;}
+    from {background-color: var(--yellow); top: 0;}
     to {background-color: red; top: 40px;}
 }
 
@@ -141,7 +132,7 @@ h2 {
 .box2 {
     width: 250px;
     height: 50px;
-    background-color: #6e6e6e;
+    background-color: var(--lightGray);
     text-align: left;
     padding: 5px;
     display: flex;

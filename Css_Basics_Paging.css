@@ -1,5 +1,5 @@
 body {
-    background-color: #6e6e6e;
+    background-color: var(--lightGray);
 }
 
 #inner {
