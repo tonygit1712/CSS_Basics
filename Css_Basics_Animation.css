@@ -6,16 +6,16 @@ h2 {
 .property {
     text-align: center;
     border: 1px solid black;
-    width: 300px;
-    margin: auto;
-    margin-bottom: 50px;
+    width: max-content;
+    margin: 50px auto 50px auto;
+    padding: 0 10px;
     background-color: #333333;
     color: white;
 }
-.container3 {
+.container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 210px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 130px;
     grid-row-gap: 100px;
     max-width: 90%;
     padding: 0;
@@ -33,22 +33,212 @@ h2 {
     text-align-last: center;
 }
 
-@keyframes bgChange1 {
+/* Animations */
+@keyframes anim1 {
     from {background-color: #6e6e6e;}
     to {background-color:#ffff00;}
 }
+@keyframes anim2 {
+    0% {background-color: #6e6e6e;}
+    50% {background-color:#ffff00;}
+    100% {background-color:red;}
+}
+@keyframes anim3 {
+    from {background-color: #6e6e6e; top: 0;}
+    to {background-color:#ffff00; top: 40px;}
+}
+@keyframes anim4 {
+    from {background-color: #6e6e6e; width: 250px;}
+    to {background-color:#ffff00; width: 1350px;}
+}
+@keyframes anim5 {
+    from {background-color: #ffff00; top: 0;}
+    to {background-color: red; top: 40px;}
+}
 
+    /* Boxes Animated */
+/* @keyframes FROM -> TO */
 .one {
-    animation-name: bgChange;
+    animation-name: anim1;
     animation-duration: 3s;
 }
 .two {
-    animation-name: bgChange;
+    animation-name: anim1;
     animation-duration: 3s;
     animation-iteration-count: 3;
 }
 .three {
-    animation-name: bgChange;
+    animation-name: anim1;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+}
+.four {
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+/* @keyframes 0% -> 50% -> 100% */
+.five {
+    animation-name: anim2;
+    animation-duration: 3s;
+}
+.six {
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+.seven {
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.eight {
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+/* Animation Direction */
+.nine {
+    position: relative;
+    animation-name: anim3;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+}
+.ten {
+    position: relative;
+    animation-name: anim3;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+}
+.eleven {
+    position: relative;
+    animation-name: anim3;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+.twelve {
+    position: relative;
+    animation-name: anim3;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+/* Animation Timing */
+.container2 {
+        width: 88vw;
+        height: 300px;
+        margin-left: 50px;
+        padding: 0;
+}
+.box2 {
+    width: 250px;
+    height: 50px;
+    background-color: #6e6e6e;
+    text-align: left;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirteen {
+    position: relative;
+    animation-name: anim4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.fourteen {
+    position: relative;
+    animation-name: anim4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+.fifteen {
+    position: relative;
+    animation-name: anim4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+.sixteen {
+    position: relative;
+    animation-name: anim4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+.seventeen {
+    position: relative;
+    animation-name: anim4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation Fill Mode */
+.eighteen {
+    position: relative;
+    animation-name: anim5;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: none;
+}
+.nineteen {
+    position: relative;
+    animation-name: anim5;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.twenty {
+    position: relative;
+    animation-name: anim5;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+.twentyOne {
+    position: relative;
+    animation-name: anim5;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+/* Animation Shorthand */
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 375px;
+    grid-row-gap: 100px;
+    max-width: 70%;
+    padding: 0;
+}
+
+.twentyTwo {
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.twentyThree {
+    animation: anim1 3s ease-in-out 200ms infinite alternate;
 }

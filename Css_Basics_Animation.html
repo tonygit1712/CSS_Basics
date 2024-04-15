@@ -38,136 +38,216 @@
 	<h1 class="minor">CSS Animations</h1>
 		<h2 class="minor">Animations Properties :</h2>
 			<div class="property">
-				<p>@keyframes bgChange {<br>
+				<p>@keyframes anim1 {<br>
 						from {background-color: #6e6e6e;}<br>
 						to {background-color:#ffff00;}<br>
 					}</p>
 			</div>
-			<div class="container3">
+			<div class="container">
 				<div class="box one">
 					<h2>Animation Duration</h2>
-					<p>animation-name: bgChange;<br>
+					<p>animation-name: anim;<br>
 						animation-duration: 3s;
 					</p>
 				</div>
 				<div class="box two">
 					<h2>Animation Iteration</h2>
-					<p>animation-name: bgChange;<br>
+					<p>animation-name: anim;<br>
 						animation-duration: 3s;<br>
 						animation-iteration-count: 3;
 					</p>
 				</div>
 				<div class="box three">
 					<h2>Animation Iteration</h2>
-					<p>animation-name: bgChange;<br>
+					<p>animation-name: anim;<br>
 						animation-duration: 3s;<br>
 						animation-iteration-count: infinite;
+					</p>
+				</div>
+				<div class="box four">
+					<h2>Animation Delay</h2>
+					<p>animation-name: anim;<br>
+						animation-duration: 3s;<br>
+						animation-iteration-count: infinite;<br>
+						animation-delay: 1s;
 					</p>
 				</div>
 			</div>
 			
 			<div class="property">
-				<p>@keyframes bgChange {<br>
-						from {background-color: #6e6e6e;}<br>
-						to {background-color:#ffff00;}<br>
+				<p>@keyframes anim2 {<br>
+						0% {background-color: #6e6e6e;}<br>
+						50% {background-color:#ffff00;}<br>
+						100% {background-color:#ffff00;}<br>
 					}</p>
 			</div>
-			<div class="container3">
-				<div class="box one">
+			<div class="container">
+				<div class="box five">
 					<h2>Animation Duration</h2>
-					<p>animation-name: bgChange;<br>
+					<p>animation-name: anim;<br>
 						animation-duration: 3s;
 					</p>
 				</div>
-				<div class="box two">
+				<div class="box six">
 					<h2>Animation Iteration</h2>
-					<p>animation-name: bgChange;<br>
+					<p>animation-name: anim;<br>
 						animation-duration: 3s;<br>
 						animation-iteration-count: 3;
 					</p>
 				</div>
-				<div class="box three">
+				<div class="box seven">
 					<h2>Animation Iteration</h2>
-					<p>animation-name: bgChange;<br>
+					<p>animation-name: anim;<br>
 						animation-duration: 3s;<br>
 						animation-iteration-count: infinite;
 					</p>
 				</div>
-			</div>
-
-		
-		<h2 class="minor">Transform Property :</h2>
-			<div class="container3">
-				<div class="box four">
-					<h2>Transition Timing</h2>
-					<p>background-color: #ffff00;<br>
-						transition-property: background;<br>
-						transition-duration: 1000ms;<br>
-						transition-delay: 750ms; <br>
-						transition-timing-function: ease-in;
-					</p>
-				</div>
-				<div class="box five">
-					<h2>Transition Shorthand</h2>
-					<p>background-color: #ffff00;<br>
-						transition: background 1000ms ease-in 250ms;
-					</p>
-				</div>
-				<div class="box six">
-					<h2>Rotate Transform</h2>
-					<p>transform: rotate(45deg);<br>
-						transition-property: transform;<br>
-						transition-duration: 1000ms;<br>
-					</p>
-				</div>
-				<div class="box seven">
-					<h2>Skew Transform</h2>
-					<p>transform: skewX(-15deg);<br>
-						transition-property: transform;<br>
-						transition-duration: 1000ms;<br>
-					</p>
-				</div>
 				<div class="box eight">
-					<h2>Scale Transform</h2>
-					<p>transform: scaleY(1.1);<br>
-						transition-property: transform;<br>
-						transition-duration: 1000ms;<br>
-					</p>
-				</div>
-				<div class="box nine">
-					<h2>Translate Transform</h2>
-					<p>transform: translate(10px, 0);<br>
-						transition-property: transform;<br>
-						transition-duration: 1000ms;<br>
-					</p>
-				</div>
-				<div class="box ten">
-					<h2>Translate Transform</h2>
-					<p>transform: translateY(10px);<br>
-						transition-property: transform;<br>
-						transition-duration: 1000ms;<br>
+					<h2>Animation Delay</h2>
+					<p>animation-name: anim;<br>
+						animation-duration: 3s;<br>
+						animation-iteration-count: infinite;<br>
+						animation-delay: 1s;
 					</p>
 				</div>
 			</div>
 
-		<h2 class="minor">Transition Timing Function :</h2>
-			<div class="container2">
-				<div class="box2 eleven">
-					<p>transition-timing-function: linear;</p>
+			<h2 class="minor">Animations Direction :</h2>
+				<div class="property">
+					<p>@keyframes anim3 {<br>
+							from {background-color: #6e6e6e; top: 0;}<br>
+							to {background-color:#ffff00; top: 40px;}<br>
+						}</p>
 				</div>
-				<div class="box2 twelve">
-					<p>transition-timing-function: ease;</p>
+				<div class="container">
+					<div class="box nine">
+						<h2>Normal</h2>
+						<p>animation-name: anim1;<br>
+							animation-duration: 3s;<br>
+							animation-iteration-count: 2;<br>
+							animation-direction: normal;
+						</p>
+					</div>
+					<div class="box ten">
+						<h2>Reverse</h2>
+						<p>animation-name: anim1;<br>
+							animation-duration: 3s;<br>
+							animation-iteration-count: 2;<br>
+							animation-direction: reverse;
+						</p>
+					</div>
+					<div class="box eleven">
+						<h2>Alternate</h2>
+						<p>animation-name: anim1;<br>
+							animation-duration: 3s;<br>
+							animation-iteration-count: 2;<br>
+							animation-direction: alternate;
+						</p>
+					</div>
+					<div class="box twelve">
+						<h2>Alternate-Reverse</h2>
+						<p>animation-name: anim1;<br>
+							animation-duration: 3s;<br>
+							animation-iteration-count: 2;<br>
+							animation-direction: alternate-reverse;
+						</p>
+					</div>
 				</div>
-				<div class="box2 thirteen">
-					<p>transition-timing-function: ease-in;</p>
+			<div style="padding-top:40px;"></div>
+			<h2 class="minor">Animation Timing Function :</h2>
+				<div class="property">
+					<p>@keyframes anim4 {<br>
+						from {background-color: #6e6e6e; width: 250px;}<br>
+						to {background-color:#ffff00; width: 1350px;}<br>
+					}</p>
 				</div>
-				<div class="box2 fourteen">
-					<p>transition-timing-function: ease-out</p>
+				<div class="container2">
+					<div class="box2 thirteen">
+						<p>animation-timing-function: linear;</p>
+					</div>
+					<div class="box2 fourteen">
+						<p>animation-timing-function: ease;</p>
+					</div>
+					<div class="box2 fifteen">
+						<p>animation-timing-function: ease-in;</p>
+					</div>
+					<div class="box2 sixteen">
+						<p>animation-timing-function: ease-out</p>
+					</div>
+					<div class="box2 seventeen">
+						<p>animation-timing-function: ease-in-out</p>
+					</div>
 				</div>
-				<div class="box2 fifteen">
-					<p>transition-timing-function: ease-in-out</p>
+
+			<h2 class="minor">Animation Fill Mode :</h2>
+				<div class="property">
+					<p>.box {<br>
+						background-color: #6e6e6e; }<br><br>
+						@keyframes anim5 {<br>
+							from {background-color: #ffff00; top: 0;}<br>
+							to {background-color: red; top: 40px;}<br>
+						}
+					</p>
 				</div>
-			</div>
+				<div class="container">
+					<div class="box eighteen">
+						<h2>Fill-Mode: None</h2>
+						<p>animation-name: anim;<br>
+							animation-duration: 3s;
+						</p>
+					</div>
+					<div class="box nineteen">
+						<h2>Fill-Mode: Forwards</h2>
+						<p>animation-name: anim;<br>
+							animation-duration: 3s;<br>
+							animation-iteration-count: 3;
+						</p>
+					</div>
+					<div class="box twenty">
+						<h2>Fill-Mode: Backwards</h2>
+						<p>animation-name: anim;<br>
+							animation-duration: 3s;<br>
+							animation-iteration-count: infinite;
+						</p>
+					</div>
+					<div class="box twentyOne">
+						<h2>Fill-Mode: Both</h2>
+						<p>animation-name: anim5;<br>
+							animation-duration: 3s;<br>
+							animation-delay: 1s;<br>
+							animation-fill-mode: both;<br>
+						</p>
+					</div>
+				</div>
+				
+			<div style="padding-top:40px;"></div>
+			<h2 class="minor">Animation Shorthand :</h2>
+				<div class="property">
+					<p>.@keyframes anim1 {<br>
+						from {background-color: #6e6e6e;}<br>
+						to {background-color:#ffff00;}<br>
+					}
+					</p>
+				</div>
+				<div class="container3">
+					<div class="box twentyTwo">
+						<h2>Without Shorthand</h2>
+						<p>animation-name: anim1;<br>
+							animation-duration: 3s;<br>
+							animation-timing-function: ease-in-out;<br>
+							animation-delay: 200ms;<br>
+							animation-iteration-count: infinite;<br>
+							animation-direction: alternate;
+						</p>
+					</div>
+					<div class="box twentyThree">
+						<h2>With Shorthand</h2>
+						<p>animation: anim1 3s ease-in-out 200ms infinite alternate;
+						</p>
+					</div>
+				</div>
+				
+			
 
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
