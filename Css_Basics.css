@@ -1,27 +1,45 @@
+/* Main CSS Properties */
+* {
+    font-size: 16px; /* Unnecessary (default size) but shows what font-size this site is using. */
+    box-sizing: border-box; /* IMPORTANT ! Use this for a responsive website. */
+}
+
+/* Variables Declaration */
+:root {
+    --yellow: #ffff00;
+    --lightGray: #6e6e6e;
+    --darkGray: #333333;
+}
+
+/* <html> CSS Properties */
+html {
+    font-family: "Arial", sans-serif; /* Always setup font-family in html. This is the default font on chrome though. */
+}
+
 h1.major {
     padding: 50px 0;
     font-size:10em;
     text-align: center;
-    text-decoration: underline #ffff00 solid 10px;
+    text-decoration: underline var(--yellow) solid 10px;
 }
 
 h1.minor {
     padding: 25px 0;
     font-size:5em;
     text-align: center;
-    text-decoration: underline #ffff00 solid 5px;
+    text-decoration: underline var(--yellow) solid 5px;
 }
 
 h2.minor {
     font-size:3em;
-    text-decoration: underline #ffff00 solid 2px;
+    text-decoration: underline var(--yellow) solid 2px;
     margin-left: 25px;
 }
 
 h3.minor {
     margin: 0;
     font-size:2em;
-    text-decoration: underline #ffff00 solid 2px;
+    text-decoration: underline var(--yellow) solid 2px;
     margin-left: 50px;
 }
 
@@ -31,10 +49,24 @@ p.major {
     font-size: 1.2em;
 }
 
+.property {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: max-content;
+    margin: 50px auto 50px auto;
+    padding: 0 10px;
+    background-color: var(--darkGray);
+    color: white;
+}
+
 footer {
-    border-top: 1px dotted black ;
+    background-color: var(--lightGray);
+    border: 1px solid black;
+    color: white;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
+    font-size: 12px;
 }

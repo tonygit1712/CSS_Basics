@@ -7,27 +7,23 @@ body {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     position: fixed;
     left: 0;
     top: 0;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: auto;
     z-index: 1000;
-    background-color: #333333;
+    background-color: var(--darkGray);
     border: 1px solid black;
-    font-size: 20px;
     overflow: hidden; /*Horizontal Navbar needs overflow : hidden*/
 }
     nav ul li {
         border-right: 1px solid black;
         float: left;
+        font-size: 1.25em;
     }
-    nav ul li.right {
-        float: right;
-        text-align: right;
-    } 
     nav ul li:last-child {
         border-right: none;
     }
@@ -35,16 +31,16 @@ nav ul {
             display: inline-block;
             text-align: center;
             padding: 16px 40px;
-            color: #ffff00;
+            color: var(--yellow);
             font-size: 1.5em;
             text-decoration: none;
         }
             nav ul li a.active {
-                background-color: #6e6e6e;
+                background-color: var(--lightGray);
                 color: white;
             }
             nav ul li a:hover:not(.active) {
-                background-color: #ffff00;
+                background-color: var(--yellow);
                 color: black;
             }
 
@@ -63,7 +59,7 @@ nav ul {
     }
         
     .dropdown:hover .dropbtn {
-        background-color: #ffff00;
+        background-color: var(--yellow);
         color: black;
     }
 
@@ -74,8 +70,8 @@ nav ul {
     z-index: 10000;
 }
     .dropdown-content a {
-        color: #ffff00;
-        background-color: #333333;
+        color: var(--yellow);
+        background-color: var(--darkGray);
         opacity: 0.9;
         text-decoration: none;
         display: block;
@@ -85,6 +81,6 @@ nav ul {
         background-color: #f1f1f1;
     }
     .dropdown-content a.active {
-        background-color: #6e6e6e;
+        background-color: var(--lightGray);
         color: white;
     }

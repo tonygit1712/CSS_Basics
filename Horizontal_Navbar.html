@@ -16,7 +16,7 @@
 	<nav>
 		<ul>
 			<li class="dropdown">
-				<a href="Css_Basics.html" class="dropbtn">Basic CSS</a>
+				<a href="Css_Basics.html" class="dropbtn">CSS Basics</a>
 				<div class="dropdown-content">
 					<a href="Css_Basics_Positioning.html">Positioning</a>
 					<a href="Css_Basics_Typo.html">Typography</a>
@@ -29,22 +29,278 @@
 				</div>
 			</li>
 			<li><a href="Vertical_Navbar.html" class="left">Ver. Navbar</a></li>
-			<li><a href="Horizontal_Navbar.html" class="active left">Hor. Navbar</a></li>
-			<li><a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank" class="right">Selectors</a></li>
+			<li><a href="Horizontal_Navbar.html" class="left active">Hor. Navbar</a></li>
+			<li class="dropdown" class="right">
+				<a class="dropbtn">CSS References</a>
+				<div class="dropdown-content">
+					<a href="https://www.w3schools.com/cssref/index.php" target="_blank">Properties</a>
+					<a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank">Selectors</a>
+					<a href="https://www.google.com/search?q=color+picker&oq=color+picker&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDE2NTJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank">Color Picker</a>
+					<a href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp" target="_blank">px to em</a>
+					<a href="https://www.w3schools.com/css/css_form.asp" target="_blank">Forms</a>
+					<a href="https://www.w3schools.com/css/css_navbar.asp" target="_blank">Navbar</a>
+					<a href="https://codepen.io/erikterwan/pen/EVzeRP" target="_blank">Hamburger</a>
+				</div>
+			</li>
 		</ul>
 	</nav>
 
-	<h1>CSS Basics</h1>
-
-		<h2>Positioning</h2>
-			<div class="positionContainer">
-				<div class="box static">Static</div>
-				<div class="box relative">Relative</div>
-				<div class="box absolute">Absolute</div>
-				<div class="box fixed">Position: Fixed</div>
-			</div>
-			<div class="box sticky">Sticky</div>
+	<h1>HTML Basics : There can only be ONE h1 !</h1>
+		<h2>My Second Heading</h2>
+			<h3>My Third Heading</h3>
+				<p title="this is a tooltip">My first paragraph.</p>
 		
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h2>Formatting texts :</h2>
+			<p><b>&lt;b&gt;This is a bold text&lt;/b&gt;</b></p>
+			<p><strong>&#60;strong&#62;This is a bold text with a semantic meaning (important)&#60;/strong&#62;</strong></p>
+			<p><i>&#60;i&#62;This is an itallic text&#60;/i&#62;</i></p>
+			<p><em>&#60;em&#62;This is an itallic text with a semantic meaning (important)&#60;/em&#62;</em></p>
+			<p><small>&#60;smal&#62;This is a small text&#60;/small&#62;</small></p>
+			<p><mark>&#60;mark&#62;This is a marked text&#60;/mark&#62;</mark></p>
+			<p><del>&#60;del&#62;This is a deleted text&#60;/del&#62;</del></p>
+			<p><sub>&#60;sub&#62;This is a subscripted text&#60;/sub&#62;</sub></p>
+			<p><sup>&#60;sup&#62;This is a superscripted text&#60;/sup&#62;</sup></p>
+			<p><ins>&#60;ins&#62;This is an inserted text&#60;/ins&#62;</ins></p>
+
+		<h2>Hyperlinks :</h2>
+			<h3>Web Pages :</h3>
+				<h4>Basics :</h4>
+					<p>This is a link : <a href="Html_Basics.html">Html Basics.html</a></p>
+					<p>This is a link with a title attribute : <a href="Html_Basics.html" title="Html_Basics.html">Link</a></p>
+				<h4>Target attribute :</h4>
+					<p>The target attribute <a href="Html_Basics.html" target="_blank">_blank</a> opens the link in a new window</p>
+					<p>The target attribute <a href="Html_Basics.html" target="_parent">_parent</a> opens the link in a parent frame</p>
+					<p>The target attribute <a href="Html_Basics.html" target="_self">_self</a> opens the link in the same window</p>
+					<p>The target attribute <a href="Html_Basics.html" target="_top">_top</a> opens the link in the full body of the window</p>
+			<h3>Downloadable content :</h3>
+				<p>This is a link to a <a href="defaultImage.zip" download>Downloadable File</a></p>
+				<p>This is a link to a <a href="defaultImage.zip" download="downloadedFileName">Downloadable File</a> with a specific name</p>
+			<h3>Links for Query String Handling :</h3>
+				<p>This is a <a href="Html_Basics.html?setting1=value1&setting2=value2">Link</a></p>
+
+		<h2>Images :</h2>
+			<h3>Link/image</h3>
+				<a href="Html_Basics.html">
+					<img src="defaultImage.jpg" alt="alternative text" width="80" height="60">
+				</a>
+			<h3>Float :</h3>
+				<p>
+					<img src="defaultImage.jpg" alt="" style="float: right; width: 5%; height: 5%">
+					This is a paragraph, with an image included in the paragraph and I included a style attribute with the float CSS property to the right of the screen. Therefore, the image is showed on the right of the paragraph. What a world we live in !
+					This is a paragraph, with an image included in the paragraph and I included a style attribute with the float CSS property to the right of the screen. Therefore, the image is showed on the right of the paragraph. What a world we live in !
+					This is a paragraph, with an image included in the paragraph and I included a style attribute with the float CSS property to the right of the screen. Therefore, the image is showed on the right of the paragraph. What a world we live in !
+				</p>
+				<p>
+					<img src="defaultImage.jpg" alt="" style="float: left; width: 5%; height: 5%">
+					This is a paragraph, with an image included in the paragraph and I included a style attribute with the float CSS property to the left of the screen. Therefore, the image is showed on the left of the paragraph. What a world we live in !
+					This is a paragraph, with an image included in the paragraph and I included a style attribute with the float CSS property to the left of the screen. Therefore, the image is showed on the left of the paragraph. What a world we live in !
+					This is a paragraph, with an image included in the paragraph and I included a style attribute with the float CSS property to the left of the screen. Therefore, the image is showed on the left of the paragraph. What a world we live in !
+				</p>
+			<h3>Background Images</h3>
+				<p style="background-image:url('backgroundImage1.jpeg'); color: white;">This is a paragraph written on a background image</p>
+				<div style="background-image:url('backgroundImage2.jpg'); color: white;">
+					<p>This is a paragraph written on a background image included in a div instead of a p. It shows you can include it in a lot of HTML tags !</p>
+				</div>
+
+		<h2>Tables :</h2>
+			<table style="width:100%;"> <!--This is a table tag-->
+				<tr> <!--This is a Table Row (tr)-->
+					<th colspan="2">1st and 2nd Table Header in a colspan</th> <!--This is a Table Header (th)-->
+					<th>3rd Table Header</th>
+				</tr>
+				<tr>
+					<td>Table Data</td>
+					<td>Table Data</td>
+					<td>Table Data</td>
+				</tr>
+				<tr>
+					<td>Table Data</td>
+					<td rowspan="2">Table Data in a rowspan</td>
+					<td>Table Data</td>
+				</tr>
+				<tr>
+					<td>Table Data</td>
+					<td>Table Data</td>
+				</tr>
+			</table>
+
+		<h2>Lists :</h2>
+			<h3>Ordered Lists :</h3>
+				<ol>
+					<li>List Element 1</li>
+					<li>List Element 2</li>
+					<li>List Element 3</li>
+				</ol>
+				<ol style="list-style-type: upper-alpha;">
+					<li>List Element A</li>
+					<li>List Element B</li>
+					<li>List Element C</li>
+				</ol>
+			<h3>Unordered Lists :</h3>
+				<ul>
+					<li>List Element</li>
+					<li>List Element</li>
+					<li>List Element</li>
+				</ul>
+				<ul style="list-style-type: none;">
+					<li>List Element</li>
+					<li>List Element</li>
+					<li>List Element</li>
+				</ul>
+
+		<h2>iFrames :</h2>
+			<iframe src="https://www.bing.com/" name="iframe_a" width="300" height="50"></iframe>
+			<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools</a> | <a href="https://www.bing.com" target="iframe_a">Bing</a></p>
+
+		<h2>Forms :</h2>
+			<h3>Basic Form with Submit Button :</h3>
+				<form action="/action_page.php" target="_blank" method="get"> <!--A form has a target--> <!--Use post method for sensitive content, get is set by default-->
+					<label for="fname">First name:</label><br>
+					<input type="text" id="fname" value="John"><br> <!--the name attribute is required in order to be submitted to the action page.-->
+					<label for="lname">Last name:</label><br>
+					<input type="text" id="lname" name="lname" value="Doe" autocomplete="on"><br> <!--Autocomplete is turned on on this input-->
+					<input type="submit" value="Submit">
+				</form> 
+			<h3>Radio Inputs :</h3>
+				<form>
+					<input type="radio" id="html" name="fav_language" value="HTML">
+					<label for="html">HTML</label><br>
+					<input type="radio" id="css" name="fav_language" value="CSS">
+					<label for="css">CSS</label><br>
+					<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+					<label for="javascript">JavaScript</label>
+				</form>
+			<h3>Checkbox Input :</h3>
+				<form>
+					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+					<label for="vehicle1"> I have a bike</label><br>
+					<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+					<label for="vehicle2"> I have a car</label><br>
+					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+					<label for="vehicle3"> I have a boat</label>
+				</form>
+			<h3>Dropdown Lists :</h3>
+				<form>
+					<label for="cars">Choose ONE car:</label>
+					<select id="cars" name="cars">
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+				</form>
+				<form>
+					<label for="cars">Choose a car or MULTIPLE cars:</label>
+					<select id="cars2" name="cars" size="2" multiple>
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+				</form>
+			<h3>Email / Password Inputs :</h3>
+				<form action="/action_page.php" method="post">
+					<label for="username">Username (maxlength=15):</label><br>
+					<input type="text" id="username" name="username" maxlength="15"><br>
+					<label for="email">Enter your email:</label><br>
+					<input type="email" id="email" name="email" required><br>
+					<label for="pwd">Password:</label><br>
+					<input type="password" id="pwd" name="pwd"><br><br>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</form>
+			<h3>Datalist :</h3>
+				<form action="/action_page.php">
+					<input list="browsers">
+					<datalist id="browsers">
+						<option value="Edge">
+						<option value="Firefox">
+						<option value="Chrome">
+						<option value="Opera">
+						<option value="Safari">
+					</datalist>
+				</form>
+			<h3>Textarea :</h3>
+				<textarea name="message" rows="5" cols="30">The cat was playing in the garden.</textarea>
+				<textarea name="message" style="width: 200px; height:75px;" placeholder="This is a placeholder"></textarea>
+			<h3>Button :</h3>
+				<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+			<h3>Legend / Fieldset :</h3>
+				<form>
+					<fieldset>
+					<legend>This is the legend of the fieldset.</legend>
+					<label for="fname">First name:</label><br>
+					<input type="text" id="fname2" name="fname" value="John"><br>
+					<label for="lname">Last name:</label><br>
+					<input type="text" id="lname2" name="lname" value="Doe"><br><br>
+					</fieldset>
+				</form>
+			<h3>Output element :</h3>
+				<form action="/action_page.php" oninput="x.value=parseInt(a.value)">
+					<input type="range"  id="a" name="a" value="50">
+					<output name="x" for="a"></output><br><br>
+					<input type="submit" value="Boom">
+				</form>
+			<h3>Other Inputs :</h3>
+				<form>
+					<label for="autofocus">Text Input With Autofocus Attribute:</label>
+					<input type="text" id="autofocus" name="autofocus" value="autofocus" autofocus><br>
+					<label for="readonly">Text Input With Readonly Attribute:</label>
+					<input type="text" id="readonly" name="readonly" value="readonly" readonly><br>
+					<label for="favcolor">Select your favorite color:</label>
+					<input type="color" id="favcolor" name="favcolor"><br>
+					<label for="birthday">Birthday:</label>
+					<input type="date" id="birthday" name="birthday"><br>
+					<label for="datemax">Enter a date before 1980-01-01:</label>
+					<input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+					<label for="datemin">Enter a date after 2000-01-01:</label>
+					<input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+					<label for="bdaymonth">Select a month and year:</label>
+					<input type="month" id="bdaymonth" name="bdaymonth"><br>
+					<label for="week">Select a week:</label>
+					<input type="week" id="week" name="week"><br>
+					<label for="appt">Select a time:</label>
+					<input type="time" id="appt" name="appt"><br>
+					<label for="myfile">File Upload Input:</label>
+					<input type="file" id="myfile" name="myfile"><br>
+					<label for="quantity">Number Input (between 1 and 5):</label>
+					<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+					<label for="quantity">Even Number Input (Step Attribute):</label>
+					<input type="number" id="quantity2" name="quantity" min="0" max="10" step="2"><br>
+					<label for="phone">Tel Input:</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123 12 123"><br>
+					<label for="gsearch">Search Input:</label>
+					<input type="search" id="gsearch" name="gsearch"><br>
+					<label for="homepage">URL Input:</label>
+					<input type="url" id="homepage" name="homepage"><br><br>
+					<input type="image" src="img_submit.gif" alt="Submit Image" width="48" height="48">
+				</form>
+
+		<h2>Medias :</h2>
+			<h3>Video :</h3>
+				<video width="320" height="240" controls> <!--attributes autoplay and muted-->
+					<source src="movie.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+			<h3>Audio :</h3>
+				<audio controls> <!--attributes autoplay and muted are also usable-->
+					<source src="horse.ogg" type="audio/ogg">
+					<source src="horse.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+			<h3>Youtube :</h3>
+				<iframe width="420" height="315"
+					src="https://www.youtube.com/embed/tgbNymZ7vqY"> 
+				</iframe>
+				<!-- Add &mute=1 for muted video, &autoplay=1 for autoplay and &loop=1 for looped video-->
+				<iframe width="420" height="315"
+					src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"> 
+				</iframe>
+				<!-- Add &control=0 not to display controls in the player-->
+				
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+
 </body>
 </html>

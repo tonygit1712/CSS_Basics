@@ -15,7 +15,7 @@ h2 {
 .box {
     width: 200px;
     height: 200px;
-    background-color: #6e6e6e;
+    background-color: var(--lightGray);
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
@@ -27,29 +27,29 @@ h2 {
 
 /* Transition Properties */
 .one:hover {
-    background-color: #ffff00;
+    background-color: var(--yellow);
     transition-property: background;
 }
 .two:hover {
-    background-color: #ffff00;
+    background-color: var(--yellow);
     transition-property: background;
     transition-duration: 1000ms;
 }
 .three:hover {
-    background-color: #ffff00;
+    background-color: var(--yellow);
     transition-property: background;
     transition-duration: 1000ms;
     transition-delay: 750ms;
 }
 .four:hover {
-    background-color: #ffff00;
+    background-color: var(--yellow);
     transition-property: background;
     transition-duration: 1000ms;
     transition-delay: 250ms;
     transition-timing-function: ease-in;
 }
 .five:hover {
-    background-color: #ffff00;
+    background-color: var(--yellow);
     transition: background 1000ms ease-in 250ms;
 }
 
@@ -118,7 +118,7 @@ transition-timing-function: linear;
     transition-timing-function: ease-in-out;
 }
 .eleven {
-    background-color: #ffff00;
+    background-color: var(--yellow);
 }
 .twelve {
     background-color: #dddd00;
