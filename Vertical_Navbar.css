@@ -22,11 +22,16 @@ nav ul {
     nav ul li {
         border-bottom: 1px solid black;
     }
-        nav ul li a {
+        nav ul li a, .dropbtn {
             display: block;
             color: var(--yellow);
             text-align: center;
             font-size: 1.5em;
+            text-decoration: none;
+        }
+        nav ul li a, .dropbtn {
+            padding: 16px 40px;
+            color: var(--yellow);
             text-decoration: none;
         }
             nav ul li a.active {
@@ -37,3 +42,42 @@ nav ul {
                 background-color: var(--yellow);
                 color: black;
             }
+ 
+/* Dropdown Content */           
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+    .dropdown:hover .dropdown-content {
+        display: block;
+        left: 15%;
+        top: 0;
+    }
+        
+    .dropdown:hover .dropbtn {
+        background-color: var(--yellow);
+        color: black;
+    }
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 10000;
+    }
+    .dropdown-content a {
+        color: var(--yellow);
+        background-color: var(--darkGray);
+        opacity: 0.9;
+        text-decoration: none;
+        display: block;
+        border: 1px solid black;
+    }
+    .dropdown-content a.active {
+        background-color: var(--lightGray);
+        color: white;
+    }
